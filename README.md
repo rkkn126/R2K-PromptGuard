@@ -1,4 +1,4 @@
-# R2KEval
+# R2K PromptGuard
 
 R2K PromptGuard is a small, client‑side tool that scans prompts for sensitive content before you send them to a Large Language Model (LLM).
 
@@ -27,7 +27,8 @@ This makes it useful as a “pre‑check” before you paste logs, code, or text
   Define words in a single input field, comma separated and case‑insensitive.
 
 - Master configuration support(Mandatory for larger configured prebuild)
-  Load a shared JSON config (`master_config.json`) or import one from disk to apply common rules.
+  Load a shared JSON config (`master_config.json`)
+  This config can be tailored to your organization, project, or personal needs.
 
 - Copy prompt  
   Copy the (reviewed and edited) prompt to your clipboard with one click.
