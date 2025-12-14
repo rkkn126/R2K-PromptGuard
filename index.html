@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R2K Eval</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-size:18px;font-weight:700">R2K</div>
+      <div class="small">Exact words + master configuration</div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="prompt">Enter prompt</label>
+        <textarea id="prompt" placeholder="Paste or type your prompt"></textarea>
+        <div class="btns" style="margin-top:10px">
+          <button id="scanBtn">Scan</button>
+          <button class="secondary" id="copyPromptBtn">Copy prompt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-size:16px;font-weight:700">Exact match words</div>
+      <div class="small">Comma-separated; case-insensitive</div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="keywords">Words</label>
+        <input id="keywords" type="text" placeholder="Enter Text">
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div style="font-size:16px;font-weight:700">Master configuration</div>
+    <div class="row" style="margin-top:8px">
+      <div class="col">
+        <label>Load master config</label>
+        <div class="btns">
+          <button id="loadMasterBtn">Load master_config.json</button>
+          <button class="secondary" id="importMasterBtn">Import master config</button>
+          <input id="importMasterFile" type="file" accept="application/json" style="display:none">
+        </div>
+        <div class="small" id="masterStatus" style="margin-top:6px"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div style="font-size:16px;font-weight:700">Findings</div>
+    <table class="table" id="findingsTable" style="margin-top:8px">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Value</th>
+          <th>Position</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="card">
+    <div style="font-size:16px;font-weight:700">Preview</div>
+    <div class="preview" id="highlightPreview" style="margin-top:8px"></div>
+    <div class="btns" style="margin-top:8px">
+      <button id="clearPreviewBtn" class="secondary">Clear preview</button>
+    </div>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-size:16px;font-weight:700">Disclaimer</div>
+      <div class="small">Developer: Rama Nagireddi</div>
+    </div>
+    <div class="small" style="margin-top:8px">
+      • This tool is provided “as is” for internal use only.<br>
+      • Not legal advice; regex/detections are heuristic and may be inaccurate.<br>
+      • You are responsible for reviewing matches, configuring rules, and compliance.<br>
+      • The developer (Rama Nagireddi) is not liable for misuse, damages, or failures.<br>
+      • Perform security, privacy, and QA reviews before production use.
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
