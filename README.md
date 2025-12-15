@@ -39,7 +39,7 @@ This makes it useful as a “pre‑check” before you paste logs, code, or text
 
 
 # Getting Started
-- Open `R2KEval/index.html` in a modern browser.
+- Open `index.html` in a modern browser.
 - click `Import master config` and select a JSON with `{ rules: [{ name, patterns[] }] }`.
 - Enter the prompt and click `Scan`.
 
