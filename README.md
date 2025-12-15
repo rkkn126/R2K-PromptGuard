@@ -13,6 +13,7 @@ Lets you paste or type a prompt and scan it for:
 - Stores your keyword settings locally so they persist across sessions
 
 This makes it useful as a “pre‑check” before you paste logs, code, or text into any LLM.
+<img width="711" height="749" alt="Maineva" src="https://github.com/user-attachments/assets/0d7f3397-aee1-4b6f-8f35-53965d529855" />
 
 ## Features
 - Pure client‑side HTML/JS**  
